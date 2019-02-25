@@ -86,8 +86,10 @@ for (let i = 0; i < inventory.length; i += 1) {
 }
 
 // ==== Challenge 2 ====
+
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
-let lastCar = inventory.slice(-1)[0];
+let lastCar = inventory[inventory.length - 1];
+// let lastCar = inventory.slice(-1)[0];
 console.log("Challenge 2");
 console.log(lastCar);
 

@@ -92,20 +92,23 @@ console.log("---------- STRETCH GOALS BELOW -------");
 const parent = {
   name: "susan",
   age: 70,
+  sentence: "hello I'm Susan!",
   speak: function() {
-    return "hello I'm Susan!";
+    return this.sentence;
   },
   child: {
     name: "George",
     age: 50,
+    sentence: "hello I'm George!",
     speak: function() {
-      return "hello I'm George!";
+      return this.sentence;
     },
     grandchild: {
       name: "Sam",
       age: 30,
+      sentence: "hello I'm Sam!",
       speak: function() {
-        return "hello I'm Sam!";
+        return this.sentence;
       }
     }
   }
